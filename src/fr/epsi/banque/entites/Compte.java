@@ -29,4 +29,13 @@ public class Compte {
     public void setSolde(double solde) {
         this.solde = solde;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Compte { %s, %.02f}", numero, solde);
+        /*return "Compte{" +
+                "numero='" + numero + '\'' +
+                ", solde=" + solde +
+                '}';*/
+    }
 }
