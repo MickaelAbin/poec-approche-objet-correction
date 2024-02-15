@@ -32,9 +32,10 @@ public class Compte {
 
     @Override
     public String toString() {
-        return "Compte{" +
+        return String.format("Compte { %s, %.02f}", numero, solde);
+        /*return "Compte{" +
                 "numero='" + numero + '\'' +
                 ", solde=" + solde +
-                '}';
+                '}';*/
     }
 }
